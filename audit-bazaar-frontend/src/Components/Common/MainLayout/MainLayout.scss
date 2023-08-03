@@ -1,0 +1,18 @@
+@import "../../../Assets/theme/_var.scss";
+
+.main-wrap {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  &__inner {
+    flex: 1 0 auto;
+    padding-top: 9.6rem;
+    @media (max-width: 1679px) {
+      padding-top: 8.4rem;
+    }
+    @media (max-width: 767px) {
+      padding-top: 6.6rem;
+    }
+  }
+}

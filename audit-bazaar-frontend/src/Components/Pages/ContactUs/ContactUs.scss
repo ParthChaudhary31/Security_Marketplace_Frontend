@@ -1,0 +1,25 @@
+@import "../../../Assets/theme/_var.scss";
+
+.contact-page {
+  &__wrap {
+    max-width: 78.8rem;
+    margin: 0 auto;
+    background: $baseColor5;
+    padding: 4.2rem;
+    border-radius: 1rem;
+    @media (max-width: 767px) {
+      padding: 2rem;
+    }
+    h4 {
+      margin-bottom: 3.5rem;
+      @media (max-width: 767px) {
+        margin-bottom: 2rem;
+      }
+    }
+    .customInput {
+      textarea {
+        height: 15.4rem;
+      }
+    }
+  }
+}

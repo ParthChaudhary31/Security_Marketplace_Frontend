@@ -1,0 +1,43 @@
+@import "../../../../Assets/theme/_var.scss";
+
+.voting_sec {
+    // padding-top: 10rem;
+
+    .text_green {
+        color: $green;
+    }
+
+    .text_red {
+        color: $red;
+    }
+
+    .progress_btn {
+        display: flex;
+
+        .view_btn {
+            background: linear-gradient(white, white) padding-box, linear-gradient(90deg, #FF992E 0%, #F88038 22.00%, #E74352 67.00%, #DA1467 100%);
+            border-radius: 50em;
+            border: 1px solid transparent;
+            max-width: 8.6rem;
+            width: 100%;
+            height: 3.4rem;
+            margin-right: 1rem;
+
+            p {
+                background: linear-gradient(90deg, #FF992E 12%, #F88038 83%, #E74352 67%, #DA1467 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+
+                &:hover {
+                    color: $gray4;
+                }
+            }
+        }
+
+        .vote_btn {
+            max-width: 8.6rem;
+            width: 100%;
+            height: 3.4rem;
+        }
+    }
+}

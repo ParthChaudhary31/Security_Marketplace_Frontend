@@ -1,0 +1,22 @@
+@import "../../../Assets/theme/_var.scss";
+
+.common_heading {
+  padding-bottom: 1.5rem;
+  // border-bottom: 0.1rem solid $borderColor;
+  margin-bottom: 3rem;
+  line-height: 1;
+
+  @media (max-width: 1679px) {
+    padding-bottom: 1.3rem;
+    margin-bottom: 2.5rem;
+  }
+
+  @media (max-width: 991px) {
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  // @include theme() {
+  //     border-bottom-color: theme-get('newsCardBorder');
+  // }
+}

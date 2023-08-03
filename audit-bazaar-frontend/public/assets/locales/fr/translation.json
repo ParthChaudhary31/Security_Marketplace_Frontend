@@ -1,0 +1,12 @@
+{
+    "header": {
+      "connect_wallet_text": "Connecter le portefeuille",
+      "login": "connexion",
+      "company_name" : "Passe-partout d'Antier"
+    },
+    "home" : {
+    "slogan" : "Boilerplate d'Antier avec React, Typescript, Redux, Web3",
+    "text" : "Décentraliser le monde",
+    "bottom_text" : "Depuis 2016 grâce à des solutions de blockchain d'entreprise avant-gardistes."
+  }
+}

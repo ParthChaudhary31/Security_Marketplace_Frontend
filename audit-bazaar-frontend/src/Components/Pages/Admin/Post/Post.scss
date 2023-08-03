@@ -1,0 +1,139 @@
+@import '../../../../Assets/theme/_var.scss';
+
+.Post {
+    .container-fluid {
+        padding-left: 30rem;
+
+        @media (max-width:991px) {
+            padding-left: 0;
+        }
+    }
+
+    &_request {
+        padding: 5rem 2.2rem 4rem;
+        border-radius: 3rem;
+        background: $white;
+        box-shadow: 0px 0px 23px 0px rgba(0, 0, 0, 0.05);
+        width: 100%;
+        max-width: 97.5rem;
+
+        @media (max-width:991px) {
+            max-width: 100%;
+            padding: 1.8rem;
+        }
+
+        h6 {
+            color: $graydark;
+            font-weight: 600;
+
+            @media (max-width:767px) {
+                font-size: 1.6rem;
+            }
+        }
+
+        &_inputList {
+            margin-top: 3rem;
+
+            @media (max-width:991px) {
+                margin-top: 1.5rem;
+            }
+
+            .form-label {
+                font-size: 1.6rem;
+                margin-bottom: 0.9rem;
+                color: $gray4;
+
+                @media (max-width:767px) {
+                    font-size: 1.4rem;
+                }
+            }
+
+            .post_input {
+                background: $white;
+                box-shadow: 0px 0.1rem 0.4rem 0px rgba(0, 0, 0, 0.13);
+                border: none;
+
+                &:focus {
+                    box-shadow: 0px 0.1rem 0.4rem 0px rgb(0 0 0 / 13%);
+                }
+            }
+
+            input[type="date" i]::-webkit-calendar-picker-indicator {
+                background-image: url('../../../../Assets/Images/datepicker.svg');
+                background-size: contain;
+                background-repeat: no-repeat;
+                cursor: pointer;
+
+            }
+
+            .rightIcon {
+                p {
+                    color: $orangeclr;
+                }
+            }
+
+            .select_option {
+                margin-bottom: 2rem;
+
+                .select__control {
+                    border-radius: 3rem;
+                    background: $white;
+                    box-shadow: 0px 0.1rem 0.4rem 0px rgb(0 0 0 / 13%);
+                    height: 6rem;
+                    padding: 0 1.6rem;
+                    font-size: 1.3rem;
+
+                    &:hover {
+                        border: 1px solid transparent;
+                    }
+
+                    .select__single-value {
+                        color: $black2;
+                        font-weight: 500;
+
+                        .post_checkbox {
+                            display: none;
+                        }
+                    }
+
+                    .select__dropdown-indicator {
+                        background-image: url('../../../../Assets/Images/Icons/black-down-arrow.svg');
+                    }
+                }
+
+                .select__menu {
+                    border-radius: 2rem;
+                    background: $white;
+                    box-shadow: 0px 0px 23px 0px rgba(0, 0, 0, 0.05);
+
+                    .select__option {
+                        color: $black2;
+                        font-size: 1.6rem;
+
+                        .post_checkbox {
+                            width: 1.6rem;
+                            height: 1.6rem;
+                        }
+                    }
+
+                    .select__option--is-selected {
+                        background-color: transparent;
+                    }
+
+                    &:focus {
+                        background-color: transparent;
+                    }
+                }
+            }
+
+            .post_btn {
+                max-width: 177px;
+                margin-top: 2rem;
+
+                @media (max-width:767px) {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,68 @@
+@import "../../../Assets/theme/_var.scss";
+
+.custom-pagination {
+  text-align: center;
+  max-width: 10.7rem;
+  margin: 2rem auto;
+
+  small {
+    color: rgba($white, 0.7);
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    // @media (max-width:767px) {
+    //   margin-top: 0;
+    // }
+  }
+
+  &__no {
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: $gray3;
+    padding: 0.4rem 1rem;
+
+    @media (max-width: 767px) {
+      font-size: 1.3rem;
+    }
+
+    a {
+      color: $gray5;
+
+      &.active {
+        color: $blackgrey;
+      }
+    }
+  }
+
+  &__arrows {
+    span {
+      cursor: pointer;
+      background: linear-gradient(90deg, #FF992E 0%, #F88038 22.00%, #E74352 67.00%, #DA1467 100%);
+      border-radius: 50%;
+      width: 4rem;
+      height: 4rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+
+      &:first-child {
+        margin-right: 1rem;
+      }
+
+      svg path {
+        @extend %transition;
+      }
+
+      &:hover {
+        svg path {
+          fill: $white;
+        }
+      }
+    }
+  }
+}

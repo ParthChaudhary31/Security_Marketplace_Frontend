@@ -1,0 +1,129 @@
+@import "../../../Assets/theme/_mixins.scss";
+
+.common_select {
+  .selector_item {
+    display: flex;
+    align-items: center;
+
+    .selector_icon {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      margin-right: 4px;
+    }
+
+    .selector_name {
+      font-size: 1.4rem;
+    }
+  }
+
+  .select__control {
+    cursor: pointer;
+    border: none;
+    font-size: 1.5rem;
+    height: 4rem;
+    min-width: 8rem;
+    transition: none;
+    box-shadow: none;
+    border: 0.1rem solid $white;
+    border-radius: 1rem;
+    background-color: $white;
+    padding: 0rem 0rem;
+    @media (max-width:1679px) {
+      height: 4.5rem!important;
+    }
+
+    &:hover {
+      border-color: none !important;
+    }
+
+    .select__input-container {
+      color: $black2;
+    }
+
+    &.select__control--is-focused,
+    &.select__control--menu-is-open {
+      border: 0.1rem solid $white;
+    }
+
+    .select__placeholder {
+      color: $black2;
+    }
+
+    .select__single-value {
+      color: $baseColor;
+      display: flex;
+      align-items: center;
+      font-weight: 600;
+      gap: 10px;
+    }
+
+    .select__indicator-separator {
+      display: none;
+    }
+
+    .select__dropdown-indicator {
+      background-image: url(../../../Assets/Images/downarrow.png);
+      background-repeat: no-repeat;
+      background-position: center;
+
+      svg {
+        display: none;
+      }
+    }
+  }
+
+  .select__menu {
+    width: 100%;
+    right: 0;
+    left: unset;
+    background-color: $baseColor2;
+
+    .select__menu-notice {
+      font-size: 1.4rem;
+    }
+
+    .select__menu-list {
+      .select__option {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        font-size: 1.4rem;
+
+        // &.select__option--is-selected {
+        //   background-color: $primaryColor !important;
+        // }
+
+        &.select__option--is-focused {
+          background-color: transparent;
+        }
+
+        &:hover {}
+      }
+    }
+  }
+
+  &.input_select {
+    .select__control {
+      height: 58px;
+
+      @media (max-width: 1199px) {
+        height: 50px;
+      }
+
+      .select__placeholder {}
+
+      .select__input-container {}
+
+      .select__indicator {
+        svg {}
+      }
+
+      .select__single-value {}
+
+      &.select__control--is-focused,
+      &.select__control--menu-is-open {}
+    }
+  }
+}

@@ -1,0 +1,66 @@
+@import "../../../Assets/theme/_var.scss";
+
+.filter {
+  padding-bottom: 3rem;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  @media (max-width: 467px) {
+    gap: 0.75rem;
+  }
+
+  p {
+    white-space: nowrap;
+  }
+
+  &__fields {
+    gap: 1.5rem;
+    @media (max-width: 467px) {
+      gap: 0.75rem;
+    }
+  }
+  &__search {
+    position: relative;
+    max-width: 28.4rem;
+
+    @media (max-width: 767px) {
+      flex: 0 0 48%;
+      max-width: 100%;
+    }
+    @media (max-width: 467px) {
+      flex: 0 0 100%;
+    }
+    &__icon {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 2rem;
+    }
+    .customInput {
+      .form-control {
+        padding-left: 5rem;
+      }
+    }
+  }
+
+  .btn-style {
+    height: auto;
+  }
+
+  .datepicker-style,
+  .btn-style,
+  .common_select {
+    @media (max-width: 767px) {
+      max-width: 100%;
+      flex: 0 0 48%;
+    }
+    @media (max-width: 467px) {
+      flex: 0 0 100%;
+    }
+  }
+
+  .btn-style {
+    @media (max-width: 467px) {
+      height: 4.5rem;
+    }
+  }
+}

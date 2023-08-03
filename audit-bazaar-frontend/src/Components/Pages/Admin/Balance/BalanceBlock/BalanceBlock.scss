@@ -1,0 +1,90 @@
+@import "../../../../../Assets/theme/_var.scss";
+
+.balance_block {
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 23px 0px rgba(0, 0, 0, 0.05);
+    border-radius: 2rem;
+    padding: 2rem;
+    margin-bottom: 1.2rem;
+
+    &_img {
+        background-color: $beigeclr;
+        border-radius: 2rem;
+        max-width: 12.2rem;
+        width: 100%;
+        height: 9.7rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media(max-width: 1679px) {
+            height: 9rem;
+            width: 9rem;
+        }
+
+        @media(max-width: 1199px) {
+            height: 8rem;
+            width: 8rem;
+        }
+
+        @media(max-width: 767px) {
+            height: 6rem;
+            width: 6rem;
+        }
+
+        img {
+            @media(max-width: 1199px) {
+                padding: 2rem;
+            }
+
+            @media(max-width: 767px) {
+                padding: 1.5rem;
+            }
+        }
+    }
+
+    &_info {
+        margin-left: 2.4rem;
+    }
+
+    h3 {
+        color: rgba(51, 51, 51, 0.6);
+        font-size: 2rem;
+        font-weight: 500;
+
+        @media(max-width: 1679px) {
+            font-size: 1.8rem;
+        }
+
+        @media(max-width: 1199px) {
+            font-size: 1.6rem;
+        }
+
+        @media(max-width: 767px) {
+            font-size: 1.4rem;
+        }
+    }
+
+    h2 {
+        color: $graydark;
+        font-size: 2.4rem;
+        font-weight: 600;
+        margin-top: 1.7rem;
+
+        @media(max-width: 1679px) {
+            font-size: 2rem;
+            margin-top: 1.3rem;
+        }
+
+        @media(max-width: 1199px) {
+            margin-top: 1rem;
+            font-size: 1.8rem;
+        }
+
+        @media(max-width: 767px) {
+            margin-top: 0.8rem;
+            font-size: 1.6rem;
+        }
+    }
+}

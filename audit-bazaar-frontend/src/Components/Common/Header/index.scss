@@ -1,0 +1,261 @@
+@import "../../../Assets/theme/_mixins.scss";
+
+.header {
+  padding: 2.1rem 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1001;
+  background-color: $baseColor2;
+  @extend %transition;
+
+  @media (max-width: 1679px) {
+    padding: 1.5rem 0;
+  }
+
+  .app-header {
+    padding: 0;
+
+    &.navbar {
+      .header-logo {
+        @media (max-width: 767px) {
+          max-width: 8rem;
+        }
+      }
+
+      .nav-link {
+        color: $white;
+        font-weight: 500;
+        font-size: 1.6rem;
+        padding: 0 1rem;
+        margin: 0 1.2rem;
+        @extend %transition;
+        cursor: pointer;
+
+        @media (max-width: 1679px) {
+          font-size: 1.4rem;
+          padding: 0 0.7rem;
+          margin: 0 0.7rem;
+        }
+
+        &:hover,
+        &:focus,
+        &.active {
+          color: $primaryColor;
+        }
+      }
+
+      .WltBtn {
+        margin-left: 3.2rem;
+        min-width: 15.6rem;
+        font-size: 1.4rem;
+        padding: 1rem 2rem;
+
+        @media (max-width: 1679px) {
+          margin-left: 1.5rem;
+        }
+
+        @media (max-width: 767px) {
+          min-width: 10rem;
+          font-size: 1.2rem;
+        }
+
+        &--connected {
+          background-color: transparent;
+          border: 0;
+          padding: 0;
+          color: $white;
+
+          span {
+            margin-right: 1.5rem;
+
+            @media (max-width: 1679px) {
+              margin-right: 1rem;
+            }
+
+            img {
+              @media (max-width: 1679px) {
+                width: 4rem;
+                height: 4rem;
+              }
+
+              @media (max-width: 767px) {
+                width: 3.6rem;
+                height: 3.6rem;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    // .common_select {
+    //   .select__menu {
+    //     min-width: 200px;
+    //   }
+    // }
+
+    // .toggle_btn {
+    //   background-color: transparent;
+    //   border: none;
+    //   padding: 0;
+    //   height: auto;
+    //   display: flex;
+    //   flex-direction: column;
+    //   margin-left: 16px;
+
+    //   span {
+    //     width: 32px;
+    //     height: 3px;
+    //     border-radius: 10px;
+    //     margin-bottom: 8px;
+    //     transition: transform 300ms ease-in-out, opacity 300ms ease-in-out;
+    //     transform-origin: left;
+
+    //     &:last-child {
+    //       margin-bottom: 0;
+    //     }
+
+    //     @media (max-width: 767px) {
+    //       width: 28px;
+    //       margin-bottom: 7px;
+    //     }
+    //   }
+
+    //   &.active {
+    //     span {
+    //       &:first-child {
+    //         transform: rotate(45deg);
+    //       }
+
+    //       &:nth-child(2) {
+    //         opacity: 0;
+    //       }
+
+    //       &:last-child {
+    //         transform: rotate(-45deg);
+    //       }
+    //     }
+    //   }
+    // }
+
+    // @media (max-width: 767px) {
+    //   .btn-style {
+    //     font-size: 12px;
+    //     padding: 0 10px;
+    //     height: 38px;
+    //   }
+
+    //   .language_selector {
+    //     .select__control {
+    //       height: 38px;
+    //       font-size: 12px;
+    //     }
+    //   }
+    // }
+
+    // @media (max-width: 479px) {
+    //   .language_selector {
+    //     .select__control {
+    //       .select__single-value {
+    //         span {
+    //           display: none;
+    //         }
+    //       }
+    //     }
+    //   }
+    // }
+  }
+
+  // offcanvas style
+  &__offcanvas {
+    &.offcanvas {
+      box-shadow: $boxShadow;
+    }
+
+    .offcanvas-header,
+    .offcanvas-body {
+      padding: 2rem;
+
+      @media (max-width: 991px) {
+        background-color: $baseColor3;
+      }
+    }
+
+    .offcanvas-header {
+      .header {
+        &__logo {
+          max-width: 8rem;
+        }
+      }
+
+      .btn-close {
+        background-color: $primaryColor;
+        opacity: 1;
+      }
+    }
+
+    .navbar-nav {
+      .nav-link {
+
+        &:focus,
+        &.active {
+          color: $primaryColor;
+        }
+      }
+    }
+  }
+
+  .navbar-toggler {
+    padding: 0.5rem;
+    width: 4rem;
+    height: 4rem;
+    border-color: $primaryColor;
+    margin-left: 2rem;
+    background-color: $primaryColor;
+    border-radius: 1rem;
+
+    @media (max-width: 767px) {
+      margin-left: 1rem;
+      width: 3.6rem;
+      height: 3.6rem;
+    }
+
+    &:focus {
+      box-shadow: unset;
+    }
+  }
+
+  &.scrolled {
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    box-shadow: $boxShadow2;
+
+    @media (max-width: 1679px) {
+      padding-top: 0.9rem;
+      padding-bottom: 0.9rem;
+    }
+  }
+}
+
+.sidebar_backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  // backdrop-filter: blur(4px);
+  z-index: 1000;
+  background-color: rgba(#fff, 0);
+  backdrop-filter: blur(4px);
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.shimmer.asbutton {
+  animation: placeholderShimmer 12s linear infinite forwards !important;
+}

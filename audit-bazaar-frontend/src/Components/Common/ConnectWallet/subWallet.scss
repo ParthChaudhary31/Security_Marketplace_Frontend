@@ -1,0 +1,40 @@
+@import "../../../Assets/theme/_mixins.scss";
+
+.connect_wallet {
+  .connect_options {
+    ul {
+      li {
+        border-radius: 1rem;
+        padding: 1.5rem;
+        font-size: 1.6rem;
+        font-weight: 500;
+        background-color: transparent;
+        border: 0.1rem solid rgba($orangeclr, 0.5);;
+        color: $white;
+        cursor: pointer;
+        @extend %transition;
+        // font-family: $baseFont2;
+        display: flex;
+        align-items: center;
+
+        @media (max-width: 767px) {
+          padding: 1rem;
+          font-size: 1.3rem;
+        }
+
+        &:not(:last-child) {
+          margin-bottom: 2rem;
+        }
+        span {
+          width: 2.5rem;
+          height: 2.5rem;
+          margin-right: 1.5rem;
+        }
+
+        &:hover {
+          border-color: $orangeclr;
+        }
+      }
+    }
+  }
+}

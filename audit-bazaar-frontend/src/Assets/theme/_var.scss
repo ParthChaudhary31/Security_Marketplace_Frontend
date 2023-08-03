@@ -1,0 +1,70 @@
+// $baseFont: "Roboto", sans-serif;
+$baseFont: 'SF Pro Display';
+// $baseFont2: "Zen Dots", cursive;
+// $baseFont3: "Russo One", sans-serif;
+
+$baseColor: #090c13;
+$baseColor2: #070a11;
+$baseColor3: #121b22;
+$baseColor4: #0d1725;
+$baseColor5: #0e141b;
+$baseColor6: #12171b;
+$baseColor7: #333;
+$borderclr: #f3f3f3;
+$primaryColor: #7cd0de;
+$primaryColor2: #afc8cd;
+$primaryColor3: #9bb2b7;
+$lightBlue: #caf0f9;
+$offwhite: #FBFDFF;
+$white: #ffffff;
+$white2: #f6f6f6;
+$white3: #cecfd1;
+$black: #000;
+$black2: #2B2B2B;
+$gray: #636770;
+$gray2: #a09faf;
+$gray3: #b4b4b5;
+$gray4: #626160;
+$gray6: #B8B8B8;
+$grayshade: #898989;
+$lightgray: #7A7A7A;
+$graydark: #333;
+$graymatter: #181818;
+$blackgrey: #393939;
+$blue: #5C6BC0;
+$blue2: #007AB9;
+$blue3: #039BE5;
+$gray5: #7A7A7A;
+$borderColor: #373d41;
+$bordercolor2: #F3F3F3;
+$borderColor3: #F5F5F5;
+$borderColor4: #C9CACC;
+$borderclr5: linear-gradient(90deg, #FF992E 0%, #F88038 22.00%, #E74352 67.00%, #DA1467 100%);
+$orangeclr: #FB8B34;
+$beigeclr: #FFF4EB;
+$green: #55DA16;
+$green2: #2BBD2E;
+$red: #FF2828;
+$red2: #F72627;
+$redClr: #E74154;
+
+
+$gradient: linear-gradient(90deg, #7cd0de 0%, #7e77ae 100%);
+$gradient2: linear-gradient(153.06deg, #13b8ba -0.31%, #6a0a6b 99.69%);
+$gradient3: linear-gradient(180deg,
+    rgba(124, 208, 222, 0.12) 0%,
+    rgba(9, 12, 19, 0) 100%);
+$gradient4: linear-gradient(90deg, #7e77ae 0%, #7cd0de 100%);
+$gradient5: linear-gradient(90deg, #FF992E 0%, #F88038 22.00%, #E74352 67.00%, #DA1467 100%);
+
+// extends
+%transition {
+  transition: 0.3s all ease-in-out;
+}
+
+$boxShadow: 0 1.2rem 1.6rem -0.4rem rgba(16, 24, 40, 0.08),
+  0 0.4rem 0.6rem -0.2rem rgba(16, 24, 40, 0.03);
+$boxShadow2: 0 1rem 1.4rem rgba(255, 255, 255, 0.06);
+
+$boxShadow3: inset 3px 17px 37px rgba(3, 3, 3, 0.6),
+  inset 0px 0px 5px rgba(255, 255, 255, 0.1);

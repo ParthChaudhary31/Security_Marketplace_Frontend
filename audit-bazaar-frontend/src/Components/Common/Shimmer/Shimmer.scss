@@ -1,0 +1,29 @@
+@import "../../../Assets/theme/_mixins.scss";
+
+.shimmer {
+  // background-image: linear-gradient(to right, #f6f6f6c7 8%, #f0f0f0e0 18%, #f6f6f6 33%);
+  background-repeat: no-repeat;
+  background-size: 800px 104px;
+  border-radius: 8px;
+  display: inline-block;
+  position: relative;
+  animation: placeholderShimmer 2s linear infinite forwards !important;
+}
+@-webkit-keyframes placeholderShimmer {
+  0% {
+    background-position: -468px 0;
+  }
+
+  100% {
+    background-position: 468px 0;
+  }
+}
+@keyframes placeholderShimmer {
+  0% {
+    background-position: -468px 0;
+  }
+
+  100% {
+    background-position: 468px 0;
+  }
+}

@@ -1,0 +1,17 @@
+@import '../../../Assets/theme/_var.scss';
+
+
+
+.backIcon {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 2rem;
+    span{
+        margin-right: 0.6rem;
+    }
+    p{
+        color: $orangeclr;
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+}

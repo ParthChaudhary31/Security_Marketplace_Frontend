@@ -1,0 +1,37 @@
+@import "../../../../Assets/theme/_var.scss";
+
+.claim-token {
+  &-modal {
+    .modal-dialog {
+      max-width: 90rem;
+    }
+    .modal-header {
+      margin-bottom: 1.8rem;
+    }
+    .modal-body {
+      padding: 0;
+    }
+
+    .common_table {
+      thead {
+        tr th {
+          font-weight: 400;
+          > div {
+            justify-content: center;
+          }
+
+          &:first-child {
+            // padding-left: 3.6rem;
+            > div {
+              justify-content: start;
+            }
+          }
+        }
+      }
+      tbody td {
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+      }
+    }
+  }
+}

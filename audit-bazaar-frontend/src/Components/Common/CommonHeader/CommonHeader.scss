@@ -1,0 +1,10 @@
+@import "../../../Assets/theme/_var.scss";
+
+.common_header {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    background-color: white;
+    // height: 6rem;
+    padding: 2.7rem 7rem 2.7rem;
+}

@@ -1,0 +1,114 @@
+@import '../../../../Assets/theme/_var.scss';
+
+.Message {
+    &_box {
+        .row {
+            margin: 0 -15px;
+
+            >div {
+                padding: 0 15px;
+            }
+        }
+
+        .message_list {
+            .dashboardList_data {
+                max-width: 100%;
+
+                .dashboardList_data_value {
+                    li {
+                        width: auto;
+
+                        @media (max-width:1440px) {
+                            padding: 2.3rem 1.3rem;
+                        }
+
+                        @media (max-width:575px) {
+                            width: 50%;
+                        }
+
+                        h4 {
+                            @media (max-width:1440px) {
+                                font-size: 1.2rem;
+                            }
+                        }
+
+                        p {
+                            @media (max-width:1440px) {
+                                font-size: 1.2rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &_detail {
+            border-radius: 3rem;
+            padding: 1rem 1.7rem;
+            background: $white;
+            margin-bottom: 3.1rem;
+            box-shadow: 0 0 2.3rem 0 rgba(0, 0, 0, 0.05);
+
+            @media (max-width:1199px) {
+                margin-top: 3.1rem;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            &_info {
+                display: flex;
+                align-items: center;
+
+                .message_image {
+                    width: 6rem;
+
+                    img {
+                        width: 6rem;
+                        height: 6rem;
+                        border-radius: 5rem;
+
+                        // @media (max-width:380px) {
+                        //     width: 6rem;
+                        //     height: 6rem;
+                        // }
+                    }
+                }
+
+                .list_content {
+                    margin-left: 2.2rem;
+                    width: calc(100% - 8rem);
+
+                    @media (max-width:767px) {
+                        margin-left: 1.2rem;
+                    }
+
+                    h6 {
+                        color: $graydark;
+
+                        @media (max-width:767px) {
+                            font-size: 1.6rem;
+                        }
+                    }
+
+                    .user_email {
+                        color: rgba($graydark, 0.5);
+                        margin-top: 0;
+
+                        @media (max-width:575px) {
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+            }
+
+            p {
+                font-size: 1.4rem;
+                font-weight: 500;
+                margin-top: 1.4rem;
+                color: $black2;
+            }
+        }
+    }
+}

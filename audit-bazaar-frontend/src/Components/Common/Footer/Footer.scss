@@ -1,0 +1,189 @@
+@import "../../../Assets/theme/_var.scss";
+
+.footer {
+  flex-shrink: 0;
+  padding-top: 5rem;
+  background-color: $baseColor3;
+  color: rgba($white, 0.8);
+
+  @media (max-width: 1679px) {
+    padding-top: 4rem;
+  }
+
+  @media (max-width: 767px) {
+    padding-top: 3rem;
+  }
+
+  h5 {
+    // font-family: $baseFont2;
+    line-height: 3rem;
+    margin-bottom: 1.6rem;
+
+    @media (max-width: 1679px) {
+      margin-bottom: 1.2rem;
+    }
+
+    @media (max-width: 1199px) {
+      font-size: 1.8rem;
+      line-height: 2rem;
+    }
+
+    @media (max-width: 767px) {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  &__logo {
+    margin-bottom: 1.4rem;
+
+    @media (max-width: 767px) {
+      max-width: 8rem;
+    }
+  }
+
+  &__links {
+    li {
+      a {
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: inherit;
+        @extend %transition;
+
+        @media (max-width: 1679px) {
+          font-size: 1.4rem;
+        }
+
+        @media (max-width: 767px) {
+          font-size: 1.2rem;
+        }
+
+        &:hover {
+          color: $primaryColor;
+        }
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 1.2rem;
+
+        @media (max-width: 1679px) {
+          margin-bottom: 0.8rem;
+        }
+
+        @media (max-width: 767px) {
+          margin-bottom: 0.4rem;
+        }
+      }
+    }
+  }
+
+  &__left {
+    padding-right: 5rem;
+
+    @media (max-width: 1679px) {
+      padding-right: 2rem;
+    }
+
+    @media (max-width: 767px) {
+      padding-right: 0;
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      color: rgba($white2, 0.8);
+      line-height: 2.6rem;
+      margin-bottom: 3.2rem;
+      font-weight: 400;
+
+      @media (max-width: 767px) {
+        margin-bottom: 2rem;
+        line-height: 1.8rem;
+      }
+    }
+  }
+
+  &__right {
+    max-width: 46.5rem;
+
+    @media (max-width: 767px) {
+      max-width: 100%;
+    }
+  }
+
+  &__subscribe {
+    margin: 3rem 0 3.8rem;
+    border-radius: 4.2rem;
+    padding: 0.4rem;
+    display: flex;
+    background-color: rgba($primaryColor, 0.1);
+
+    @media (max-width: 1679px) {
+      margin: 2.5rem 0;
+    }
+
+    input {
+      font-weight: 400;
+      font-size: 1.5rem;
+      padding: 1rem 2rem;
+      border-radius: 1.2rem 0 0 1.2rem;
+      width: calc(100% - 15.6rem);
+      border: 0;
+      background-color: transparent;
+      color: $white;
+
+      @media (max-width: 1679px) {
+        font-size: 1.4rem;
+      }
+
+      @media (max-width: 1199px) {
+        width: calc(100% - 10rem);
+      }
+
+      @media (max-width: 767px) {
+        padding: 0.7rem 1.5rem;
+      }
+
+      &:focus {
+        outline: 0;
+      }
+
+      &::placeholder {
+        color: rgba($white2, 0.6);
+      }
+
+      &::-webkit-input-placeholder {
+        color: rgba($white2, 0.6);
+      }
+
+      &:-moz-placeholder {
+        color: rgba($white2, 0.6);
+      }
+    }
+
+    .btn-style {
+      @media (max-width: 1199px) {
+        min-width: 10rem;
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  &__copyright {
+    margin-top: 4rem;
+    border-top: 0.1rem solid rgba($gray, 0.3);
+    padding: 2rem 1rem;
+
+    @media (max-width: 767px) {
+      padding: 1.5rem 0;
+    }
+
+    span {
+      font-size: 1.4rem;
+      color: $white;
+
+      @media (max-width: 767px) {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}

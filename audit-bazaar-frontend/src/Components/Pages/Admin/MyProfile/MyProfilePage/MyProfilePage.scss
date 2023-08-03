@@ -1,0 +1,274 @@
+@import '../../../../../Assets/theme/_var.scss';
+
+.profile_page {
+    .row {
+        row-gap: 2rem;
+    }
+
+    .dashboard_card {
+        padding: 0;
+
+        &_inner {
+            border-bottom: 0;
+            justify-content: flex-start;
+            padding: 0 2rem;
+
+            @media (max-width:1440px) {
+                display: block;
+            }
+
+            &_body {
+                padding-left: 6rem;
+                padding-top: 0;
+
+                @media (max-width:1679px) {
+                    padding-left: 3rem;
+                }
+
+                @media (max-width:1440px) {
+                    padding-left: 0;
+                }
+
+                h6 {
+                    color: rgba($baseColor7, 0.8) !important;
+
+                    @media (max-width:1440px) {
+                        padding: 1.3rem 0 1rem !important;
+                    }
+
+                    @media (max-width:1440px) {
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+
+        h6 {
+            font-size: 1.6rem;
+            font-weight: 500;
+            color: $baseColor7;
+            padding: 1.3rem 2rem 1rem;
+
+            @media (max-width:1440px) {
+                font-size: 1.4rem;
+            }
+        }
+
+        .dashboardList_data_value {
+            border-top: 1px solid $borderclr;
+
+            li {
+                width: 33%;
+                padding: 2rem 4.3rem;
+                // width: auto;
+
+                @media (max-width:1440px) {
+                    padding: 1.5rem 2rem;
+                }
+
+                @media (max-width:575px) {
+                    width: 50%;
+                }
+
+                h4 {
+                    @media (max-width:1440px) {
+                        font-size: 1.2rem;
+                    }
+                }
+
+                p {
+                    @media (max-width:1440px) {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+
+        .viewCard_btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            // margin-top: 2.6rem;
+            padding: 2.6rem;
+            gap: 1.3rem;
+
+            .red_border {
+                border: 1px solid $red2;
+                color: $red2;
+                // min-width: 15rem;
+            }
+
+            .green_bg {
+                background: $green2;
+                // min-width: 15rem;
+            }
+        }
+    }
+}
+
+.dashboardList_data_header {
+    @media (max-width:1679px) {
+        padding: 2.3rem 1rem;
+    }
+}
+
+.dashboardList_data_description {
+    @media (max-width:1679px) {
+        padding: 2.3rem 1rem;
+    }
+
+    label {
+        color: $gray4;
+    }
+
+    .textarea {
+        color: $black2;
+    }
+}
+
+.dashboardList_data {
+    // max-width: 100%;
+
+    .dashboardList_data_value {
+        // ul {
+        //     flex-wrap: unset;
+        // }
+
+        li {
+            width: auto;
+
+            &:nth-child(3) {
+                @media (max-width:1307px) {
+                    border-right: 0;
+                }
+
+                @media (max-width:1199px) {
+                    border-right: 1px solid $borderColor3;
+                }
+            }
+
+            @media (max-width:1679px) {
+                padding: 2.3rem 1rem;
+            }
+
+            @media (max-width:575px) {
+                width: 50%;
+            }
+
+            h4 {
+                @media (max-width:1679px) {
+                    font-size: 1.2rem;
+                }
+            }
+
+            p {
+                @media (max-width:1679px) {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}
+
+.dashboardList_data_audit {
+    @media (max-width: 1679px) {
+        padding: 1.3rem 1rem;
+    }
+
+    .audit_heading {
+        font-size: 1.4rem;
+        font-weight: 500;
+        color: $gray4;
+        margin-right: 1.5rem;
+
+        @media (max-width:1679px) {
+            margin-right: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        @media (max-width:575px) {
+            br {
+                display: none;
+            }
+        }
+    }
+
+    &_data {
+        display: flex;
+        align-items: center;
+
+        @media (max-width:575px) {
+            margin-top: 1.5rem;
+        }
+
+        @media (max-width:479px) {
+            display: block;
+        }
+
+        .dashboard_audit {
+            margin-right: 1.2rem;
+
+            @media (max-width:479px) {
+                margin-right: 0;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            .audit_btn {
+                border-radius: 5rem;
+                border: 0.1rem solid rgba($black, 0.1);
+                background: $white;
+                padding: 0.7rem 2.6rem;
+                text-align: center;
+
+                @media (max-width:1679px) {
+                    padding: 0.7rem 1rem;
+                }
+
+                @media (max-width:479px) {
+                    margin-top: 1rem;
+                }
+
+                p {
+                    font-size: 1.4rem;
+                    font-size: 500;
+                    color: $lightgray;
+
+                    @media (max-width:1679px) {
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .social_account {
+        a {
+            @media (max-width:1679px) {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+.dashboardList_data_input {
+    label {
+        color: $gray4;
+    }
+
+    @media (max-width:1679px) {
+        padding: 2.3rem 1rem;
+    }
+
+    .btn-style {
+        @media (max-width:1440px) {
+            min-width: 15rem;
+        }
+
+        @media (max-width:767px) {
+            min-width: 10rem;
+        }
+    }
+}
