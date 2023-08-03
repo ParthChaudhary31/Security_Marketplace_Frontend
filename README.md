@@ -34,43 +34,43 @@ There are two ways to run project :
 
 ## Docker
 
- 1 If docker already installed skip this step, otherwise you need to install docker first, visit the official docker installation guide : https://docs.docker.com/engine/install/
+ 1. If docker already installed skip this step, otherwise you need to install docker first, visit the official docker installation guide : https://docs.docker.com/engine/install/
 
- 2 Make sure docker is up & running
+ 2. Make sure docker is up & running
 
- 3 Once you are in root directory of the project folder (confirm by exuting command ls, you should be able to see two folders audit-bazaar-frontend & static_build_audit_bazaar) execute following steps
+ 3. Once you are in root directory of the project folder (confirm by exuting command ls, you should be able to see two folders audit-bazaar-frontend & static_build_audit_bazaar) execute following steps
 
- 4 cd audit-bazaar-frontend
+ 4. cd audit-bazaar-frontend
 
- 5 On command line run the command : npm install
+ 5. On command line run the command : npm install
 
- 6 then run this command : npm run build
+ 6. then run this command : npm run build
 
- 7 Once the build is created, copy all the files and folders from the build folder and paste it to the build folder of static_build_audit_bazaar
+ 7. Once the build is created, copy all the files and folders from the build folder and paste it to the build folder of static_build_audit_bazaar
 
  Now navigate to static_build_audit_bazaar folder 
 
- 8 cd ..
+ 8. cd ..
 
- 9 cd static_build_audit_bazaar
+ 9. cd static_build_audit_bazaar
 
- 10 On command line run this command : sudo docker build -t my-audit-bazaar-img .
+ 10. On command line run this command : sudo docker build -t my-audit-bazaar-img .
 
- 11 then run this command : sudo docker run -p 3000:3000 my-audit-bazaar-img
+ 11. then run this command : sudo docker run -p 3000:3000 my-audit-bazaar-img
 
- 1.12 Once the command executes (in success case, you will see "> node index.js" in your terminal) visit localhost:3000 in your browser, project should be up and running.
+ 12. Once the command executes (in success case, you will see "> node index.js" in your terminal) visit localhost:3000 in your browser, project should be up and running.
 
 ## npm
 
- 1 Switching to Node.js version 16 is required to make sure dependencies work
+ 1. Switching to Node.js version 16 is required to make sure dependencies work
 
- 2 Then, in your project, run:
+ 2. Then, in your project, run:
 
      => npm install
 
      => npm start
 
- 3 visit localhost:3000 
+ 3. Visit localhost:3000 
 
 ### Wallet Connection 
 We need to use Sub Wallet Extension for the Astar Chain
