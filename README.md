@@ -4,7 +4,7 @@
   <img src="https://storage.googleapis.com/opensea-static/opensea-js-logo-updated.png" />
 </p> -->
 
-# AUDI BAZAAR <!-- omit in toc -->
+# AUDIT BAZAAR <!-- omit in toc -->
 
 A platform for decentralized projects/contracts auditing with reputation based systems.
 
