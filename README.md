@@ -29,47 +29,48 @@ The frontend will also be able to fetch the immutable details like reputation po
 There are two ways to run project : 
 
  1. Docker
- 
+
  2. npm
 
-1. Docker
+## Docker
 
- 1.1 If docker already installed skip this step, otherwise you need to install docker first, visit the official docker installation guide : https://docs.docker.com/engine/install/
+ 1 If docker already installed skip this step, otherwise you need to install docker first, visit the official docker installation guide : https://docs.docker.com/engine/install/
 
- 1.2 Make sure docker is up & running
+ 2 Make sure docker is up & running
 
- 1.3 Once you are in root directory of the project folder (confirm by exuting command ls, you should be able to see two folders audit-bazaar-frontend & static_build_audit_bazaar) execute following steps
+ 3 Once you are in root directory of the project folder (confirm by exuting command ls, you should be able to see two folders audit-bazaar-frontend & static_build_audit_bazaar) execute following steps
 
- 1.4 cd audit-bazaar-frontend
+ 4 cd audit-bazaar-frontend
 
- 1.5 On command line run the command : npm install
+ 5 On command line run the command : npm install
 
- 1.6 then run this command : npm run build
+ 6 then run this command : npm run build
 
- 1.7 Once the build is created, copy all the files and folders from the build folder and paste it to the build folder of static_build_audit_bazaar
+ 7 Once the build is created, copy all the files and folders from the build folder and paste it to the build folder of static_build_audit_bazaar
 
  Now navigate to static_build_audit_bazaar folder 
 
- 1.8 cd ..
+ 8 cd ..
 
- 1.9 cd static_build_audit_bazaar
+ 9 cd static_build_audit_bazaar
 
- 2.0 On command line run this command : sudo docker build -t my-audit-bazaar-img .
+ 10 On command line run this command : sudo docker build -t my-audit-bazaar-img .
 
- 2.1 then run this command : sudo docker run -p 3000:3000 my-audit-bazaar-img
+ 11 then run this command : sudo docker run -p 3000:3000 my-audit-bazaar-img
 
- 2.2 Once the command executes (in success case, you will see "> node index.js" in your terminal) visit localhost:3000 in your browser, project should be up and running.
+ 1.12 Once the command executes (in success case, you will see "> node index.js" in your terminal) visit localhost:3000 in your browser, project should be up and running.
 
-2. npm 
- 2.1 Switching to Node.js version 16 is required to make sure dependencies work
+## npm
 
- 2.2 Then, in your project, run:
+ 1 Switching to Node.js version 16 is required to make sure dependencies work
+
+ 2 Then, in your project, run:
 
      => npm install
 
      => npm start
 
- 2.3 visit localhost:3000 
+ 3 visit localhost:3000 
 
 ### Wallet Connection 
 We need to use Sub Wallet Extension for the Astar Chain
