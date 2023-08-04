@@ -32,14 +32,16 @@ const ConnectWallet = () => {
   );
 
   const handleClose = () => setShow(false);
-    //Fn HANDLING WALLET CONNECTION
+  // HANDLING WALLET CONNECTION
   const wallectConnectHandle = async () => {
     if (isWalletConnected === true) {
       setSubwalletWalletAddress(ReduxwalletAddress);
     } else {
+      setSubwalletWalletAddress("");
       return
     }
   }
+
   // USE_EFFECTS
   useEffect(() => {
     setShow(false);
@@ -95,9 +97,12 @@ const ConnectWallet = () => {
     <>
       <ButtonCommon
         className={`WltBtn ${subwalletWalletAddress && "WltBtn--connected"}`}
-        title={<div className="d-flex align-items-center"><span className="me-3">
+        title={<div className="d-flex align-items-center">
+          <span className="me-3">
           <img src={wallet_icon} alt="wallet-icon" />
-        </span>  <p>Connect Wallet</p></div>}
+          </span>  
+          {subwalletWalletAddress && isWalletConnected ? customizeAddress(subwalletWalletAddress) : <p>Connect Wallet</p>}
+         </div>}
         onClick={() => {
           setShow(true);
         }}

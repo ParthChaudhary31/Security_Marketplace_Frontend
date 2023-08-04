@@ -22,18 +22,15 @@ declare global {
 /**CONNECT WITH SUBWALLET */
 export const connectSubwallet = async () => {
   try {
-    const walletAddressUserSaved = await store?.getState().authenticationDataSlice.walletAddress;
     const allInjected = await web3Enable("subwallet-js");
     const allAccounts = await web3Accounts();
     if (allAccounts[0]?.address) {
-      if(walletAddressUserSaved ===allAccounts[0]?.address){
+      if(allAccounts[0]?.address){
         store.dispatch(setWalletAddress(allAccounts[0]?.address));
         store.dispatch(setIsWalletConnected(true)); 
         store.dispatch(setWalletType(Subwallet));
         store.dispatch(setIsWalletConnected(true));
         toaster.success(WALLET_CONNECTED);
-      }else if(walletAddressUserSaved === ''){
-        toaster.error(WALLET_ADDRESS_REQUIRE);
       }
       else{
         toaster.error(WALLET_CONNECTION_UNSUCCESSFUL);
@@ -51,6 +48,7 @@ export const connectSubwallet = async () => {
 export const disconnectWallet = () => {
   try {
     store.dispatch(setWalletType(""));
+    store.dispatch(setWalletAddress(""));
     store.dispatch(setIsWalletConnected(false))
     toaster.success(WALLET_DISCONNECTED);
   } catch (error: any) {

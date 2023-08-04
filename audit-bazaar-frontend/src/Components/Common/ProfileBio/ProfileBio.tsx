@@ -102,7 +102,7 @@ const ProfileBio = () => {
           onClick={() => handlePasswordModal()}
         />
       </div>
-      <ChangePassword show={showPasswordModal} />
+      <ChangePassword show={showPasswordModal} onHide={() => setShowPasswordModal(false)} />
     </>
 
   );

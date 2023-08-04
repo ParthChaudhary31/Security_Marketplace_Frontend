@@ -68,8 +68,6 @@ const AuthLayout = ({ heading }) => {
             <div className="auth_layout_inner_header_logo">
               <img src={sm_logo} alt="logo" className="desk_log" />
             </div>
-            {/* <h4 className="text-dark ms-4 mt-3">{`${store[store.length - 1][0].toUpperCase() + store[store.length - 1].slice(1)}${store[2] == "post" ? "s" : ""}`}</h4> */}
-            <h4 className="text-dark ms-4 mt-3 text-capitalize">{location.pathname.split("/")[location.pathname.split("/").length - 1].split("-").join(" ")}</h4>
             <h2>{heading}</h2>
             <ConnectWallet wallet-icon={wallet} />
             <div className="auth_layout_inner_user">
