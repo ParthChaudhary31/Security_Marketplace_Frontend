@@ -1,0 +1,423 @@
+@import "../../../../../Assets/theme/_var.scss";
+
+.dashboardList {
+  &_data {
+    border-radius: 3rem;
+    background: $white;
+    box-shadow: 0px 0px 23px 0px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 78.8rem;
+
+    @media (max-width: 991px) {
+      max-width: 100%;
+    }
+
+    &_header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2.3rem 2.4rem 1.6rem;
+      border-bottom: 0.1rem solid $bordercolor2;
+
+      @media (max-width: 767px) {
+        padding: 2.3rem 1.4rem;
+      }
+
+      @media (max-width: 479px) {
+        display: block;
+      }
+
+      &_info {
+        display: flex;
+        align-items: center;
+
+        .list_image {
+          width: 8rem;
+
+          @media (max-width: 380px) {
+            width: 6rem;
+          }
+
+          img {
+            width: 8rem;
+            height: 8rem;
+            border-radius: 5rem;
+            object-fit: cover;
+
+            @media (max-width: 380px) {
+              width: 6rem;
+              height: 6rem;
+            }
+          }
+        }
+
+        .list_content {
+          margin-left: 2.2rem;
+          width: calc(100% - 8rem);
+
+          @media (max-width: 1440px) {
+            margin-left: 1.2rem;
+          }
+
+          p {
+            color: rgba($graydark, 0.6);
+          }
+
+          h6 {
+            color: $graydark;
+
+            @media (max-width: 1440px) {
+              font-size: 1.8rem;
+            }
+
+            @media (max-width: 767px) {
+              font-size: 1.6rem;
+            }
+          }
+
+          .user_email {
+            color: $graydark;
+          }
+        }
+      }
+
+      &_post {
+        @media (max-width: 479px) {
+          margin-top: 1.5rem;
+        }
+
+        p {
+          font-size: 1.4rem;
+          font-weight: 600;
+          color: rgba($graydark, 0.8);
+        }
+
+        .btn-style {
+          p {
+            color: $white;
+          }
+
+          &:hover {
+            color: $orangeclr;
+            // p {
+            //   color: $orangeclr;
+            // }
+          }
+        }
+      }
+    }
+
+    &_audit {
+      display: flex;
+      align-items: center;
+      padding: 2.3rem 2.4rem;
+      border-bottom: 0.1rem solid $bordercolor2;
+
+      @media (max-width: 1679px) {
+        padding: 1.3rem 1.4rem;
+      }
+
+      @media (max-width: 575px) {
+        display: block;
+      }
+
+      .audit_heading {
+        font-size: 1.4rem;
+        font-weight: 500;
+        color: $graydark;
+        margin-right: 1.5rem;
+
+        @media (max-width: 575px) {
+          br {
+            display: none;
+          }
+        }
+      }
+
+      &_data {
+        display: flex;
+        align-items: center;
+
+        @media (max-width: 575px) {
+          margin-top: 1.5rem;
+        }
+
+        @media (max-width: 479px) {
+          display: block;
+        }
+
+        .dashboard_audit {
+          margin-right: 1.2rem;
+
+          @media (max-width: 479px) {
+            margin-right: 0;
+          }
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          .audit_btn {
+            border-radius: 5rem;
+            border: 0.1rem solid rgba($black, 0.1);
+            background: $white;
+            padding: 0.7rem 2.6rem;
+            text-align: center;
+
+            @media (max-width: 1679px) {
+              padding: 0.7rem 1rem;
+            }
+
+            @media (max-width: 479px) {
+              margin-top: 1rem;
+            }
+
+            p {
+              font-size: 1.4rem;
+              font-size: 500;
+              color: $lightgray;
+
+              @media (max-width: 767px) {
+                font-size: 1.2rem;
+              }
+            }
+          }
+        }
+      }
+
+      &_social {
+        display: flex;
+        align-items: center;
+
+        @media (max-width: 575px) {
+          margin-top: 1rem;
+        }
+
+        .social_account {
+          display: flex;
+          align-items: center;
+          margin-right: 2.4rem;
+
+          @media (max-width: 479px) {
+            margin-right: 1.4rem;
+          }
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          .social_img {
+            margin-right: 0.6rem;
+
+            img {
+              width: 3.1rem;
+              height: 3.1rem;
+
+              @media (max-width: 479px) {
+                width: 2rem;
+                height: 2rem;
+              }
+            }
+          }
+
+          a {
+            font-size: 1.4rem;
+            font-weight: 500;
+
+            @media (max-width: 479px) {
+              font-size: 1.2rem;
+            }
+          }
+
+          .blue1 {
+            color: $blue;
+          }
+
+          .blue2 {
+            color: $blue2;
+          }
+
+          .blue3 {
+            color: $blue3;
+          }
+        }
+      }
+    }
+
+    &_value {
+      border-bottom: 0.1rem solid $bordercolor2;
+
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+
+
+        li {
+          text-align: left;
+          padding: 2rem 2.3rem;
+          border-right: 0.1rem solid $borderColor3;
+          color: $black;
+          width: 25%;
+
+          @media (max-width: 767px) {
+            padding: 2.3rem 1.4rem;
+          }
+
+          @media (max-width: 575px) {
+            border-right: 0;
+            text-align: center;
+            padding: 1.3rem 1.3rem;
+          }
+
+          &:last-child {
+            border-right: 0;
+
+            p {
+              overflow-y: auto;
+            }
+          }
+
+          h4 {
+            font-size: 1.4rem;
+            font-weight: 500;
+            color: $gray4;
+
+            @media (max-width: 767px) {
+              font-size: 1.3rem;
+            }
+          }
+
+          a {
+            word-break: break-all;
+          }
+
+          p {
+            font-size: 1.4rem;
+            margin-top: 0.5rem;
+            font-weight: 600;
+            color: $graydark;
+            max-height: 10rem;
+            padding-right: 0.5rem;
+
+            &::-webkit-scrollbar {
+              width: 5px;
+              /* width of the entire scrollbar */
+            }
+
+            @media (max-width: 767px) {
+              font-size: 1.2rem;
+              margin-top: 0;
+            }
+
+            .green_tick {
+              margin-right: 0.6rem;
+            }
+          }
+
+          @media (max-width: 575px) {
+            width: 50%; // &:nth-child(3n) {
+            //     border-right: 0;
+            // }
+          }
+        }
+      }
+    }
+
+    &_description {
+      padding: 1.4rem 2.4rem 2.2rem;
+      border-bottom: 0.1rem solid $bordercolor2;
+
+      @media (max-width: 767px) {
+        padding: 1.3rem 1.4rem;
+      }
+    }
+
+    &_claim_sec {
+      padding: 2rem 2.5rem;
+
+      @media(max-width:1679px) {
+        padding: 1rem 1.9rem;
+      }
+
+      .claim_btn {
+        max-width: fit-content;
+        width: 100%;
+      }
+    }
+
+    &_claim_amount {
+      color: black;
+      padding: 0 2.5rem;
+
+      @media(max-width:1679px) {
+        padding: 1rem 1.9rem;
+      }
+    }
+
+    &_input {
+      padding: 1.4rem 2.4rem 2.2rem;
+
+      .max-field {
+        input {
+          padding-right: 4rem;
+          max-width: 40rem;
+          width: 100%;
+        }
+      }
+
+      @media (max-width: 767px) {
+        padding: 1.3rem 1.4rem;
+      }
+
+      input[type="date" i]::-webkit-calendar-picker-indicator {
+        background-image: url("../../../../../Assets/Images/datepicker.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        cursor: pointer;
+      }
+
+      .input_btns {
+        display: flex;
+        align-items: center;
+        margin-top: 3rem;
+
+        @media (max-width: 575px) {
+          margin-top: 2rem;
+        }
+
+        .btn-style {
+          margin-right: 2rem;
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          &:disabled {
+            background: lightgrey;
+
+            &:hover {
+              border: 1px solid transparent;
+            }
+
+            p {
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+
+    .bid_text {
+      color: $graydark;
+      text-align: center;
+      padding: 2rem 1.5rem;
+    }
+
+    &_claim {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem 3rem;
+    }
+  }
+}

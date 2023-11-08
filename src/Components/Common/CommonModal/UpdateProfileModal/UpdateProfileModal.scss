@@ -1,0 +1,47 @@
+@import "../../../../Assets/theme/_var.scss";
+
+.update_modal {
+  .modal-content {
+    background-color: $black;
+
+    .modal-header {
+      border-bottom: 1px solid #ffffff2e;
+      padding: 1rem 2rem;
+
+      .modal-title {
+        color: $orangeclr;
+        font-weight: 400;
+        font-size: 2.4rem;
+        text-align: center;
+      }
+
+      .btn-close {
+        // filter: invert(1);
+
+        &:focus {
+          box-shadow: unset;
+          outline: unset;
+        }
+      }
+    }
+
+    .modal-body {
+      padding: 2rem;
+      padding-top: 2.5rem;
+    }
+
+    .footer_sec {
+      border-top: unset;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 3rem;
+
+      svg {
+        filter: invert(1);
+        cursor: pointer;
+        width: 5rem;
+      }
+    }
+  }
+}

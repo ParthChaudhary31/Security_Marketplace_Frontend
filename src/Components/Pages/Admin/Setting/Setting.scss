@@ -1,0 +1,354 @@
+@import "../../../../Assets/theme/_var.scss";
+
+.Setting {
+  &_box {
+    border-radius: 3rem;
+    background: $white;
+    box-shadow: 0px 0px 23px 0px rgba(0, 0, 0, 0.05);
+    padding: 2.5rem;
+
+    @media (max-width: 575px) {
+      padding: 1.5rem;
+    }
+
+    &_header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      @media (max-width: 479px) {
+        display: block;
+      }
+
+      &_info {
+        display: flex;
+        align-items: center;
+
+        .list_image {
+          width: 8rem;
+          position: relative;
+          margin-right: 2.4rem;
+
+          @media (max-width: 1679px) {
+            width: 6rem;
+          }
+
+          img {
+            width: 8rem;
+            height: 8rem;
+            object-fit: cover;
+            border-radius: 5rem;
+
+            @media (max-width: 1679px) {
+              width: 6rem;
+              height: 6rem;
+            }
+          }
+
+          .upload_img {
+            // bottom: -8px;
+            // right: -10px;
+            // position: absolute;
+            // top: 0;
+            // left: 0;
+            // opacity: 0;
+
+            .customInput {
+              position: absolute;
+              top: 0;
+              left: 0;
+              border-radius: 50%;
+              width: 100%;
+              height: 100%;
+              opacity: 0;
+
+              label {
+                opacity: 0;
+                display: none;
+              }
+            }
+
+            img {
+              position: absolute;
+              top: 0;
+              left: 0;
+              border-radius: 5rem;
+            }
+
+            span {
+              font-size: 1.8rem;
+              white-space: nowrap;
+              padding-top: 1rem;
+              position: relative;
+              top: 1rem;
+
+              @media (max-width: 575px) {
+                font-size: 1.4rem;
+              }
+            }
+          }
+
+          .upload_img {
+            &:hover {
+              .edit_icon {
+                opacity: 1;
+              }
+            }
+
+            .edit_icon {
+              position: absolute;
+              opacity: 0;
+              left: 50%;
+              top: 50;
+              transform: translate(-50%);
+              transition: 0.5s ease all;
+            }
+
+            .cross_icon {
+              position: relative;
+              top: -9rem;
+              right: -7rem;
+
+              @media (max-width: 1679px) {
+                top: -7rem;
+                right: -5.5rem;
+              }
+            }
+          }
+        }
+
+        .user_info_name {
+          color: black;
+        }
+
+        .user_email {
+          color: black;
+        }
+
+        .btn-style {
+          height: 5rem;
+          margin-top: 2rem;
+
+          @media (max-width: 1679px) {
+            margin-left: 1.2rem;
+          }
+
+          h6 {
+            color: $graydark;
+
+            @media (max-width: 767px) {
+              max-width: 100%;
+            }
+          }
+
+          .user_email {
+            color: $graydark;
+          }
+
+          &:disabled {
+            background: lightgrey;
+
+            &:hover {
+              border: 1px solid transparent;
+            }
+
+            p {
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+
+    .social_account {
+      border-radius: 5rem;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      display: flex;
+      align-items: center;
+      padding: 1rem 2.7rem;
+      margin-bottom: 2rem;
+
+      @media (max-width: 1679px) {
+        padding: 0.25rem 1.5rem;
+      }
+
+      .social_links {
+        display: flex;
+        align-items: center;
+        flex: 0 0 101px;
+        border-right: 1px solid $borderColor4;
+        padding-right: 1.1rem;
+
+        @media (max-width: 479px) {
+          flex: 0 0 95px;
+        }
+
+        .social_img {
+          margin-right: 0.6rem;
+        }
+
+        span {
+          color: $blue2;
+        }
+
+        a {
+          color: $blue;
+          font-size: 1.4rem;
+        }
+
+        .github_inp {
+          color: $blue;
+        }
+
+        .linkedin_link {
+          color: $blue2;
+        }
+
+        .linked_inp {
+          .form-control {
+            &::placeholder {
+              color: $blue2 !important;
+            }
+          }
+        }
+
+        .telegram_link {
+          color: $blue3;
+        }
+      }
+
+      .customInput {
+        margin-bottom: 0;
+        padding-left: 1.1rem;
+        flex: 0 0 calc(100% - 101px);
+
+        @media (max-width: 479px) {
+          flex: 0 0 calc(100% - 95px);
+        }
+
+        .form-control {
+          box-shadow: none;
+          padding: 0;
+          border: none;
+
+          &::placeholder {
+            color: $blue;
+          }
+        }
+
+        .blue2 {
+          &::placeholder {
+            color: $blue2;
+          }
+        }
+
+        .blue3 {
+          &::placeholder {
+            color: $blue3;
+          }
+        }
+      }
+    }
+
+    .btn-style {
+      height: 5rem;
+      margin-top: 4rem;
+
+      @media (max-width: 991px) {
+        margin-top: 1rem;
+      }
+
+      @media (max-width: 767px) {
+        width: 100%;
+      }
+
+      @media(max-width: 575px) {
+        margin: 0 auto;
+      }
+    }
+
+    .Post_request_inputList {
+      label {
+        color: $graydark;
+      }
+
+      .row {
+        >div {
+          &:nth-child(4) {
+            .social_links {
+              span {
+                @media(max-width: 575px) {
+                  font-size: 1.2rem;
+                }
+
+                color: $blue;
+                font-size: 1.4rem;
+              }
+            }
+          }
+
+          &:nth-child(5) {
+            .social_links {
+              span {
+                @media(max-width: 575px) {
+                  font-size: 1.2rem;
+                }
+
+                color: $blue2;
+              }
+            }
+          }
+
+          &:nth-child(6) {
+            .social_links {
+              span {
+                @media(max-width: 575px) {
+                  font-size: 1.2rem;
+                }
+
+                color: $blue3;
+              }
+            }
+          }
+
+          &:nth-child(7) {
+            .social_links {
+              .social_img {
+                img {
+                  min-width: 3.1rem;
+                }
+              }
+
+              span {
+                @media(max-width: 575px) {
+                  font-size: 1.2rem;
+                }
+
+                color: $blue;
+                line-height: 1.2;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .row>div {
+    position: relative;
+
+    .error-message {
+      position: absolute;
+      bottom: 0rem;
+      font-size: 1.3rem;
+    }
+  }
+
+  .social_account {
+    margin-bottom: 3rem;
+
+    @media (max-width: 1199px) {
+      margin-bottom: 1.5rem;
+    }
+  }
+}

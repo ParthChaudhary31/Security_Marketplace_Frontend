@@ -1,0 +1,17 @@
+@import "../../../Assets/theme/_var.scss";
+
+.no_data {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        max-width: 5rem;
+        width: 100%;
+    }
+
+    p {
+        color: $orangeclr;
+        font-weight: 600;
+    }
+}

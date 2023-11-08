@@ -1,0 +1,118 @@
+@import "../../../Assets/theme/_var.scss";
+
+.common_dropdown {
+    display: inline-flex;
+
+    .dropdown-toggle {
+        // background: linear-gradient(90deg, #FF992E 0%, #F88038 22%, #E74352 67%, #DA1467 100%);
+        background-color: transparent;
+        border: 1px solid #B8B8B8 !important;
+        border: 0;
+        font-size: 1.4rem;
+        font-weight: 500;
+        padding: 0.7rem 1.5rem 0.7rem 1rem !important;
+        border-radius: 3rem;
+        display: inline-flex;
+        align-items: center;
+        width: 17rem;
+        color: $gray6;
+        font-size: 1.6rem;
+
+
+        @media (max-width:575px) {
+            font-size: 1.4rem;
+            padding: 1.5rem 0.5rem;
+            min-width: 8.6rem;
+        }
+
+        &:active,
+        &:hover {
+            background-color: $orangeclr !important;
+        }
+
+        padding-right: 3.3rem !important;
+
+        &:after {
+            position: absolute;
+            right: 1.5rem;
+            // transform: translateY(-50%);
+            // top: 50%;
+        }
+
+        &.show {
+            background-color: $orangeclr !important;
+        }
+    }
+
+    &_icon {
+        height: 3.3rem;
+        width: 3.3rem;
+        border-radius: 50%;
+        margin-right: .5rem;
+        flex-shrink: 0;
+
+        @media(max-width: 1366px) {
+            height: 3rem;
+            width: 3rem;
+        }
+
+
+        img,
+        svg {
+            height: 3.3rem;
+            width: 3.3rem;
+            border-radius: 50%;
+
+
+            // @media(max-width: 991px) {
+            //     height: 2.5rem;
+            //     width: 2.5rem;
+            // }
+        }
+    }
+
+    .dropdown-item {
+        position: relative;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        .checkicon {
+            position: absolute;
+            right: 2rem;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+    }
+
+    &.selectbox {
+        .dropdown-item {
+            padding-right: 4rem;
+        }
+    }
+
+    .dropdown {
+        &-menu {
+            width: 15rem;
+            padding: 0;
+
+            .nav-link {
+                padding: 1rem;
+                font-size: 1.6rem;
+                background-color: transparent !important;
+                color: #000000b8 !important;
+                border-bottom: 1px solid #00000030;
+                border-radius: 0;
+
+                &:last-child {
+                    border-bottom: none;
+                }
+
+                &:hover {
+                    color: $orangeclr !important;
+                }
+            }
+        }
+    }
+}

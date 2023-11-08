@@ -1,0 +1,18 @@
+@import "../../../Assets/theme/_var.scss";
+
+.delete_modal {
+  h4 {
+    text-align: center;
+  }
+  .button_sections {
+    justify-content: center;
+    .verify_btn {
+      max-width: 15rem;
+      width: 100%;
+      margin: 0;
+      &:first-child {
+        margin-right: 1rem;
+      }
+    }
+  }
+}

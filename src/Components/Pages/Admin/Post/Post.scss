@@ -1,0 +1,235 @@
+@import "../../../../Assets/theme/_var.scss";
+
+.Post {
+    .container-fluid {
+        padding-left: 30rem;
+
+        @media (max-width: 991px) {
+            padding-left: 0;
+        }
+    }
+
+    .datpicker_style {
+        border-radius: 3.5rem;
+        background: #fff;
+        box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.13);
+        width: 100%;
+        position: relative;
+    }
+
+    &_request {
+        padding: 5rem 2.2rem 4rem;
+        border-radius: 3rem;
+        background: $white;
+        box-shadow: 0px 0px 23px 0px rgba(0, 0, 0, 0.05);
+        width: 100%;
+        max-width: 97.5rem;
+
+        @media (max-width: 991px) {
+            max-width: 100%;
+            padding: 1.8rem;
+        }
+
+        h6 {
+            color: $graydark;
+            font-weight: 600;
+
+            @media (max-width: 767px) {
+                font-size: 1.6rem;
+            }
+        }
+
+        &_inputList {
+            margin-top: 3rem;
+
+            @media (max-width: 991px) {
+                margin-top: 1.5rem;
+            }
+
+            .form-label {
+                font-size: 1.6rem;
+                margin-bottom: 0.9rem;
+                color: $gray4;
+
+                @media (max-width: 767px) {
+                    font-size: 1.4rem;
+                }
+            }
+
+            .form-control {
+                &::placeholder {
+                    color: $black2;
+                    font-weight: 500;
+                }
+            }
+
+            .post_input {
+                background: $white;
+                border: 1px solid rgba(0, 0, 0, 0.2);
+
+                @media (max-width: 1679px) {
+                    height: 4.5rem;
+                }
+
+                &:focus {
+                    box-shadow: 0px 0.1rem 0.4rem 0px rgb(0 0 0 / 13%);
+                }
+            }
+
+            .rightIcon {
+                p {
+                    color: $orangeclr;
+                }
+            }
+
+            .select_option {
+                margin-bottom: 2rem;
+
+                .select__control {
+                    border-radius: 3rem;
+                    background: $white;
+                    border: 1px solid rgba(0, 0, 0, 0.2);
+                    height: 6rem;
+                    padding: 0 1.6rem;
+                    font-size: 1.3rem;
+
+                    @media (max-width: 1679px) {
+                        height: 4.5rem !important;
+                    }
+
+                    .select__single-value {
+                        color: $black2;
+                        font-weight: 500;
+
+                        .post_checkbox {
+                            display: none;
+                        }
+                    }
+
+                    .select__value-container {
+                        display: flex;
+                        overflow: auto;
+                        width: 285px;
+                        padding-left: 0;
+                        white-space: nowrap;
+                        flex-wrap: nowrap;
+
+                        // @media(max-width: 479px) {}
+                    }
+
+                    .select__multi-value {
+                        min-width: 12rem;
+                    }
+
+                    .select__indicators {
+                        // align-items: baseline;
+                    }
+
+                    .select__dropdown-indicator {
+                        background-image: url("../../../../Assets/Images/Icons/black-down-arrow.svg");
+                    }
+                }
+
+                .select__menu {
+                    border-radius: 2rem;
+                    background: $white;
+                    box-shadow: 0px 0px 23px 0px rgba(0, 0, 0, 0.05);
+
+                    .select__option {
+                        color: $black2;
+                        font-size: 1.6rem;
+
+                        .post_checkbox {
+                            width: 1.6rem;
+                            height: 1.6rem;
+                        }
+                    }
+
+                    .select__option--is-selected {
+                        background-color: transparent;
+                    }
+
+                    &:focus {
+                        background-color: transparent;
+                    }
+                }
+            }
+
+            .post_btn {
+                max-width: 17.7rem;
+                margin-top: 2rem;
+                padding: 1.2rem;
+
+                @media (max-width: 767px) {
+                    max-width: 100%;
+                }
+
+                &:disabled {
+                    background: lightgrey;
+
+                    &:hover {
+                        border: 1px solid transparent;
+                        color: $white !important;
+
+                        // p {
+                        //     color: $white !important;
+                        // }
+                    }
+                }
+            }
+        }
+
+        .post_date {
+            display: block;
+
+            label {
+                font-size: 1.6rem;
+                margin-bottom: 0.9rem;
+                color: $gray4;
+                font-weight: 500;
+
+                @media(max-width: 767px) {
+                    font-size: 1.4rem;
+                }
+            }
+
+            .datepicker-style {
+                max-width: 100%;
+                box-shadow: unset;
+
+                input {
+                    padding: 1.5rem 3rem !important;
+                    border: 1px solid rgba(0, 0, 0, 0.2);
+                    border-radius: 3rem;
+                }
+            }
+        }
+    }
+
+    .social_select {
+        position: absolute;
+        max-width: 20rem;
+        right: 1rem;
+        top: 1rem;
+        border: 1px solid $gray6;
+        border-radius: 2rem;
+
+        @media (max-width: 1679px) {
+            right: 0.3rem;
+            top: 0.3rem;
+        }
+
+        .select__control {
+            border-radius: 2rem;
+        }
+
+        .select__menu-list {
+            padding: 0;
+        }
+
+        .select__option {
+            justify-content: center;
+            border-bottom: 1px solid $graydark;
+        }
+    }
+}

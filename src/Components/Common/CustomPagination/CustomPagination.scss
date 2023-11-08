@@ -1,0 +1,101 @@
+@import "../../../Assets/theme/_var.scss";
+
+.custom-pagination {
+  display: flex;
+  max-width: 10.7rem;
+  margin: 2rem auto;
+  justify-content: center;
+  align-items: center;
+
+  .page-item {
+    margin: 0;
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &.disabled {
+      a {
+        background: linear-gradient(90deg,
+            rgba(255, 153, 46, 0.5) 0%,
+            rgba(248, 128, 56, 0.5) 22%,
+            rgba(231, 67, 82, 0.5) 67%,
+            rgba(218, 20, 103, 0.5) 100%) !important;
+      }
+    }
+
+    a {
+      background: linear-gradient(90deg,
+          rgba(255, 153, 46, 1) 0%,
+          rgba(248, 128, 56, 1) 22%,
+          rgba(231, 67, 82, 1) 67%,
+          rgba(218, 20, 103, 1) 100%);
+      width: 4rem;
+      height: 4rem;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  li {
+    margin: 0 0px;
+
+    .page-link {
+      border-radius: 50%;
+      width: 3rem;
+      color: $lightergrey !important;
+      height: 4rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      user-select: none;
+      background-color: transparent;
+      background: none;
+      border: none;
+
+      &:focus {
+        box-shadow: unset;
+      }
+    }
+
+    svg {
+      path {
+        color: grey;
+      }
+    }
+
+    &.active {
+      a {
+        // background: linear-gradient(90deg, #FF992E 0%, #F88038 22.00%, #E74352 67.00%, #DA1467 100%);
+        color: $blackgrey !important;
+      }
+    }
+
+    &.next,
+    &.previous {
+      background: linear-gradient(90deg,
+          rgba(255, 153, 46, 0.5) 0%,
+          rgba(248, 128, 56, 0.5) 22%,
+          rgba(231, 67, 82, 0.5) 67%,
+          rgba(218, 20, 103, 0.5) 100%);
+      border-radius: 50%;
+
+      &:hover {
+        a {
+          color: grey;
+
+          svg {
+            path {
+              color: grey;
+            }
+          }
+        }
+      }
+    }
+  }
+}

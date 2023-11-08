@@ -1,0 +1,89 @@
+@import "../../../../Assets/theme/_var.scss";
+
+.tfa_modal {
+  .modal-dialog {
+    max-width: 50rem !important;
+    width: 100% !important;
+  }
+
+  .form-control {
+    border: 1px solid $borderColor;
+    color: $white;
+  }
+
+  .otp_sec {
+    >div {
+      justify-content: center;
+      margin: 2rem 0;
+
+      input[type="number"] {
+        width: 5rem !important;
+        height: 5rem;
+        margin: 0 0.5rem;
+        background: $bordercolor2;
+        border-radius: 1.5rem;
+        border: none;
+
+        &::placeholder {
+          color: $black;
+        }
+
+        &:focus-visible {
+          outline: unset;
+        }
+
+        @media (max-width: 767px) {
+          width: 4rem !important;
+          height: 4rem;
+          margin: 0 1rem;
+        }
+
+        @media (max-width: 479px) {
+          width: 2.5rem !important;
+          height: 2.5rem;
+          margin: 0 0.3rem;
+          border-radius: 0.5rem;
+        }
+      }
+    }
+  }
+
+  .verify_btn {
+    display: block;
+    margin: 0 auto;
+    color: $white !important;
+    max-width: 20rem;
+    width: 100%;
+    box-shadow: unset;
+
+    &:hover {
+      background: transparent;
+      border: none;
+      color: $orangeclr;
+      border: 1px solid $orangeclr;
+
+      // p {
+      //   color: $orangeclr !important;
+      // }
+    }
+
+    &:disabled {
+      background: lightgrey;
+      color: #000 !important;
+      border: none;
+      cursor: not-allowed;
+      pointer-events: none;
+
+      &:hover {
+        background: lightgrey;
+        border: none;
+        color: $orangeclr;
+        border: 1px solid $orangeclr;
+
+        p {
+          color: $white !important;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,104 @@
+@import "../../../../Assets/theme/_var.scss";
+
+.user_details {
+  @media (max-width: 1199px) {
+    margin-top: 2rem;
+  }
+
+  @media (max-width: 991px) {
+    margin-top: 1rem;
+  }
+
+  .row {
+
+    >div {
+      padding-bottom: 2.2rem;
+
+      @media (max-width: 767px) {
+        padding-bottom: 1.5rem;
+      }
+
+      .dashboard_card {
+        height: 100%;
+      }
+    }
+  }
+
+  .user_detail_box {
+    padding: 2rem;
+    border-radius: 1rem;
+    height: 100%;
+
+    .line_chart {
+      height: 200px;
+    }
+  }
+
+  .drop_btn {
+    width: 15rem !important;
+    border-radius: 3rem !important;
+    height: 5rem !important;
+    font-size: 1.6rem !important;
+    background: transparent !important;
+    border: 1px solid $gray6 !important;
+    color: $gray6 !important;
+    justify-content: flex-start !important;
+
+    @media(max-width: 991px) {
+      height: 4rem !important;
+      width: 12rem !important;
+
+      svg {
+        height: 2.5rem !important;
+        width: 2.5rem !important;
+      }
+    }
+  }
+
+  .sub_menu {
+    left: 101%;
+
+    ul {
+      margin: 0 !important;
+    }
+
+    .item_drop {
+      cursor: pointer !important;
+
+      &:hover {
+        >div {
+          flex-direction: row !important;
+          gap: 0.7rem !important;
+        }
+      }
+    }
+  }
+
+
+  .form-check {
+    cursor: pointer !important;
+
+    label {
+      cursor: pointer !important;
+    }
+
+    input {
+
+      &::before,
+      &::after {
+        content: none !important;
+        display: none !important;
+      }
+
+      &:focus {
+        box-shadow: unset !important;
+        border-color: unset !important;
+      }
+
+      &:checked {
+        border: 1px solid $orangeclr !important;
+        background-color: $orangeclr !important;
+      }
+    }
+  }
+}

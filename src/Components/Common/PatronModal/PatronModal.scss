@@ -1,0 +1,43 @@
+@import "../../../Assets/theme/_var.scss";
+
+.patron_modal {
+
+    .modal {
+        &-header {
+            margin: 0;
+            padding: 0;
+        }
+
+        &-dialog {
+            max-width: 77rem;
+            width: 100%;
+        }
+
+        &-content {
+            border: none;
+            background-color: $white;
+            // box-shadow: none;
+            padding: 5rem 4rem;
+            box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);
+
+
+            ul {
+                li {
+                    border-radius: 3rem;
+                    background: linear-gradient(90deg, rgba(255, 153, 46, 0.05), rgb(248, 128, 56, 0.05) 22.00%, rgba(231, 67, 82, 0.05) 67.00%, rgb(218, 20, 103, 0.05) 100%);
+                    margin-bottom: 1.6rem;
+                    padding: 3.6rem 2.8rem;
+
+                    h4 {
+                        color: $black2;
+                        font-weight: 600;
+                    }
+
+                    p {
+                        color: $gray1;
+                    }
+                }
+            }
+        }
+    }
+}
