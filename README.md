@@ -46,15 +46,24 @@ There are two ways to run project :
 
 ### Wallet Connection 
 3. Sub Wallet  
+
   3.1 Download Subwallet Extension for the Polkadot Wallet.
+
   3.2 Create a New Account. 
+
   3.3 From Customize Your Asset Display OPTION Choose the Shibuya Testnet (Off the Rest Network).
+
   3.4 Your Wallet Address is ready to serve.
+
   3.5 While Creating a New Account select Only Non EVM Account.
 
 ### Fund Your Wallet 
 4. Testnet Fund
+
   4.1 Visit https://portal.astar.network
+
   4.2 Select Subwallet in Native Accounts Section And Connect Your SubWallet Account.
+
   4.3 Select The Network -> Shibuya Network -> Via Shibuya and Connect it.
+  
   4.4 Click On Faucet to Get The Funds.
