@@ -47,9 +47,13 @@ There are two ways to run project :
 ### Wallet Connection 
 3. Sub Wallet  
   3.1 Download Subwallet Extension for the Polkadot Wallet.
+   
   3.2 Create a New Account. 
+  
   3.3 From Customize Your Asset Display OPTION Choose the Shibuya Testnet (Off the Rest Network).
+  
   3.4 Your Wallet Address is ready to serve.
+  
   3.5 While Creating a New Account select Only Non EVM Account.
 
 ### Fund Your Wallet 
