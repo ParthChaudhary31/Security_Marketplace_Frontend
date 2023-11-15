@@ -8,7 +8,6 @@ import {
 import { WsProvider } from "@polkadot/rpc-provider";
 import { ApiPromise } from "@polkadot/api";
 import { web3Enable } from "@polkadot/extension-dapp";
-import { options } from "@astar-network/astar-api";
 import { Abi, ContractPromise } from "@polkadot/api-contract";
 import TokenABI from "../Abi/bidToken.json";
 import EscrowABI from "../Abi/EscrowContract.json";
@@ -55,7 +54,7 @@ export const astarWalletBalance = async (walletAddress: any) => {
 //TotalSupply
 export const nativeTokenTotalSupply = async (userAddress: any) => {
   const provider = new WsProvider(RPC_URL_ASTAR);
-  const api = new ApiPromise(options({ provider }));
+  const api = new ApiPromise(({ provider }));
   // initialise via static create
   await api.isReady;
   //contract call
@@ -79,7 +78,7 @@ export const userNativeTokenBalance = async (userAddress: any) => {
   return new Promise(async (resolve, reject) => {
     try {
       const provider = new WsProvider(RPC_URL_ASTAR);
-      const api = new ApiPromise(options({ provider }));
+      const api = new ApiPromise(({ provider }));
       // initialise via static create
       await api.isReady;
       //contract call
@@ -113,7 +112,7 @@ export const userNativeTokenBalance = async (userAddress: any) => {
 export const getPaymentInfo = async (userAddress: any, currentAuditId: any) => {
   try {
     const provider = new WsProvider(RPC_URL_ASTAR);
-    const api = new ApiPromise(options({ provider }));
+    const api = new ApiPromise(({ provider }));
     // initialise via static create
     await api.isReady;
     //contract call
@@ -143,7 +142,7 @@ export const userNativeTokenAllowance = async (userAddress: any) => {
   return new Promise(async (resolve, reject) => {
     try {
       const provider = new WsProvider(RPC_URL_ASTAR);
-      const api = new ApiPromise(options({ provider }));
+      const api = new ApiPromise(({ provider }));
       // initialise via static create
       await api.isReady;
       //contract call
@@ -245,7 +244,7 @@ export const AuditPostTxn = async (data: any) => {
     const EpochTxn: any = AuditEpoch - currentEpoch;
     try {
       const provider = new WsProvider(RPC_URL_ASTAR);
-      const api = new ApiPromise(options({ provider }));
+      const api = new ApiPromise(({ provider }));
       // initialise via static create
       const allInjected = await web3Enable(SUBWALLET_JS);
       await api.isReady;
@@ -322,7 +321,7 @@ export const AcceptBidForPostTxn = async (
     try {
       //contract call
       const provider = new WsProvider(RPC_URL_ASTAR);
-      const api = new ApiPromise(options({ provider }));
+      const api = new ApiPromise(({ provider }));
       // initialise via static create
       const allInjected = await web3Enable(SUBWALLET_JS);
       await api.isReady;
@@ -393,7 +392,7 @@ export const submitAuditReportTxn = async (data: any) => {
     try {
       //contract call
       const provider = new WsProvider(RPC_URL_ASTAR);
-      const api = new ApiPromise(options({ provider }));
+      const api = new ApiPromise(({ provider }));
       // initialise via static create
       const allInjected = await web3Enable(SUBWALLET_JS);
       await api.isReady;
@@ -458,7 +457,7 @@ export const acceptAuditReportTxn = async (data: any) => {
     try {
       //contract call
       const provider = new WsProvider(RPC_URL_ASTAR);
-      const api = new ApiPromise(options({ provider }));
+      const api = new ApiPromise(({ provider }));
       // initialise via static create
       const allInjected = await web3Enable(SUBWALLET_JS);
       await api.isReady;
@@ -521,7 +520,7 @@ export const setExtendTimelineTxn = async (data: any) => {
     try {
       //contract call
       const provider = new WsProvider(RPC_URL_ASTAR);
-      const api = new ApiPromise(options({ provider }));
+      const api = new ApiPromise(({ provider }));
       // initialise via static create
       const allInjected = await web3Enable("subwallet-js");
       await api.isReady;
@@ -592,7 +591,7 @@ export const declineAuditReportTxn = async (data: any) => {
     try {
       //contract call
       const provider = new WsProvider(RPC_URL_ASTAR);
-      const api = new ApiPromise(options({ provider }));
+      const api = new ApiPromise(({ provider }));
       // initialise via static create
       const allInjected = await web3Enable(SUBWALLET_JS);
       await api.isReady;
@@ -656,7 +655,7 @@ export const ExtendTimelineTxnForPatron = async (data: any) => {
       //contract call
       if (data.isAccepted) {
         const provider = new WsProvider(RPC_URL_ASTAR);
-        const api = new ApiPromise(options({ provider }));
+        const api = new ApiPromise(({ provider }));
         // initialise via static create
         const allInjected = await web3Enable("subwallet-js");
         await api.isReady;
@@ -719,7 +718,7 @@ export const claimAmountTxn = async (data: any) => {
   return new Promise(async (resolve, reject) => {
     try {
       const provider = new WsProvider(RPC_URL_ASTAR);
-      const api = new ApiPromise(options({ provider }));
+      const api = new ApiPromise(({ provider }));
       // initialise via static create
       const allInjected = await web3Enable(SUBWALLET_JS);
       await api.isReady;

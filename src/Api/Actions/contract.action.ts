@@ -12,7 +12,6 @@ import { getError } from "../../Services/common.service";
 import { WsProvider } from "@polkadot/rpc-provider";
 import { ApiPromise } from "@polkadot/api";
 import { web3Enable } from "@polkadot/extension-dapp";
-import { options } from "@astar-network/astar-api";
 import { Abi, ContractPromise } from "@polkadot/api-contract";
 import { RPC_URL_ASTAR } from "../../Constant";
 import voteABI from "../../Abi/voting.json";
@@ -112,7 +111,7 @@ export const voteArbiters = async (
     try {
       // Contract call setup and execution code
       const provider = new WsProvider(RPC_URL_ASTAR);
-      const api = new ApiPromise(options({ provider }));
+      const api = new ApiPromise(({ provider }));
       const allInjected = await web3Enable(SUBWALLET_JS);
       await api.isReady;
 

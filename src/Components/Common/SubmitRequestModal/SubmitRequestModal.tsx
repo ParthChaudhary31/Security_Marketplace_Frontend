@@ -301,7 +301,7 @@ const SubmitRequestModal = ({
         <p className="report_line">
           You will recieve{" "}
           <span>
-            {offerAmount - (PLATFORM_FEE_PERCENTAGE * offerAmount) / 100} USD
+            {(offerAmount - (PLATFORM_FEE_PERCENTAGE * offerAmount) / 100).toFixed(2)} USD
           </span>{" "}
           after deduction of platform fees
         </p>
