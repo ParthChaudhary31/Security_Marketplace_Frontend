@@ -57,7 +57,7 @@ There are two ways to run project :
   
   3.5 While Creating a New Account select Only Non EVM Account.
 
-### Fund Your Wallet 
+### Testnet Fund 
 4. Testnet Fund
    
   4.1 Visit https://portal.astar.network.
@@ -67,3 +67,13 @@ There are two ways to run project :
   4.3 Select The Network -> Shibuya Network -> Via Shibuya and Connect it.
   
   4.4 Click On Faucet to Get The Funds.
+
+### Fund Your Wallet With Stablecoin token (Mock ERC20)
+5. Token balance will enable the user to create a Post, select a bidder, submit an audit & and facilitate further transactions on the website.
+   
+   5.1 Deploy an ERC20 standard token.
+   
+   5.2 Add the token address in the src/constant.ts file.
+
+   5.3 Replace the value of constant CONTRACT_ADDRESS_BID_TOKEN  with your deployed address.
+
